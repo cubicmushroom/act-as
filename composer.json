@@ -1,0 +1,16 @@
+{
+    "name": "cubicmushroom/authenticate-as",
+    "description": "Library to make it easy to change to act as a user, and check the current acted as user",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toby Griffths",
+            "email": "toby@cubicmushroom.co.uk"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {"CubicMushroom\\AuthenticateAs\\": "src/"}
+    }
+}
