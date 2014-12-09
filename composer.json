@@ -1,5 +1,5 @@
 {
-    "name": "cubicmushroom/authenticate-as",
+    "name": "cubicmushroom/act-as",
     "description": "Library to make it easy to change to act as a user, and check the current acted as user",
     "license": "MIT",
     "authors": [
@@ -11,7 +11,7 @@
     "minimum-stability": "stable",
     "require": {},
     "autoload": {
-        "psr-4": {"CubicMushroom\\AuthenticateAs\\": "src/"}
+        "psr-4": {"CubicMushroom\\ActAs\\": "src/"}
     },
     "require-dev": {
         "codeception/codeception": "~2.0"
