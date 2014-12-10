@@ -9,6 +9,19 @@
 namespace CubicMushroom\ActAs;
 
 
+use CubicMushroom\ActAs\StorageEngine\StorageEngineInterface;
+
+
 interface ActAsInterface
 {
-} 
+    /**
+     * @param StorageEngineInterface $storageEngine
+     * @return $this
+     */
+    public function setStorageEngine($storageEngine);
+
+    /**
+     * @return StorageEngineInterface
+     */
+    public function getStorageEngine();
+}
