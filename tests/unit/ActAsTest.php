@@ -5,6 +5,7 @@ namespace CubicMushroom\ActAs;
 
 use Codeception\Specify;
 use Codeception\TestCase\Test;
+use CubicMushroom\ActAs\Exception\InvalidArgumentException;
 use CubicMushroom\ActAs\PermissionValidator\PermissionValidator;
 use CubicMushroom\ActAs\StorageEngine\StorageEngine;
 
@@ -41,10 +42,12 @@ class ActAsTest extends Test
     }
 
 
-    // tests ActAs sets up OK with correct parameters
+    /**
+     * Tests ActAs sets up OK with correct parameters
+     */
     public function testCorrectSetup()
     {
-        $this->specify('can set the storage engine to be used', function() {
+        $this->specify('can set the storage engine to be used', function () {
 
             // Setup mocks
             $storageClass = '\CubicMushroom\ActAs\StorageEngine\StorageEngine';
@@ -57,7 +60,7 @@ class ActAsTest extends Test
             $this->assertInstanceOf($storageClass, $returnedStorageEngine);
         });
 
-        $this->specify('can set the validator to be used', function() {
+        $this->specify('can set the validator to be used', function () {
 
             // Setup mocks
             $validatorClass = '\CubicMushroom\ActAs\PermissionValidator\PermissionValidator';
@@ -71,7 +74,16 @@ class ActAsTest extends Test
         });
     }
 
-    // tests ActAs fails with incorrect storageEngine parameter
+
+    /**
+     * Tests ActAs fails with incorrect storageEngine parameter
+     */
+    public function testIncorrectSetup()
+    {
+        $this->specify('Using an invalid storage engine causes an exception', function () {
+            throw new InvalidArgumentException;
+        }, ['throws' => new InvalidArgumentException]);
+    }
 
     // tests ActAs successfully handles requests to act as, with permissions
 
