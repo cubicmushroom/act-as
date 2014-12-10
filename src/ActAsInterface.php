@@ -9,6 +9,7 @@
 namespace CubicMushroom\ActAs;
 
 
+use CubicMushroom\ActAs\PermissionValidator\PermissionValidatorInterface;
 use CubicMushroom\ActAs\StorageEngine\StorageEngineInterface;
 
 
@@ -20,8 +21,22 @@ interface ActAsInterface
      */
     public function setStorageEngine($storageEngine);
 
+
     /**
      * @return StorageEngineInterface
      */
     public function getStorageEngine();
+
+
+    /**
+     * @param PermissionValidatorInterface $permissionValidator
+     * @return $this
+     */
+    public function setPermissionValidator($permissionValidator);
+
+
+    /**
+     * @return PermissionValidatorInterface
+     */
+    public function getPermissionValidator();
 }
