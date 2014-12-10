@@ -72,4 +72,13 @@ class ActAsTest extends Test
     }
 
     // tests ActAs fails with incorrect storageEngine parameter
+
+    // tests ActAs successfully handles requests to act as, with permissions
+
+    // tests ActAs successfully handles requests to act as, without permissions
+
+    // tests ActAs successfully confirms who a user is acting as
+
+    // tests ActAs handles who's user acting as when no user to act as set
+
 }
