@@ -20,8 +20,6 @@
           <option name="BLANK_LINES_AFTER_IMPORTS" value="2" />
           <option name="BLANK_LINES_AROUND_FIELD" value="1" />
           <option name="BLANK_LINES_AROUND_METHOD" value="2" />
-          <option name="CLASS_BRACE_STYLE" value="1" />
-          <option name="METHOD_BRACE_STYLE" value="1" />
           <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
           <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
           <option name="ALIGN_MULTILINE_BINARY_OPERATION" value="true" />
@@ -49,7 +47,6 @@
         </codeStyleSettings>
       </value>
     </option>
-    <option name="USE_PER_PROJECT_SETTINGS" value="true" />
     <option name="PREFERRED_PROJECT_CODE_STYLE" value="Cubic Mushroom - Default" />
   </component>
 </project>
