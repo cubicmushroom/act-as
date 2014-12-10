@@ -1,5 +1,7 @@
 <?php
 
+namespace CubicMushroom\ActAs;
+
 
 class ActAsTest extends \Codeception\TestCase\Test
 {
@@ -17,9 +19,9 @@ class ActAsTest extends \Codeception\TestCase\Test
     }
 
     // tests
-    public function testMe()
+    public function testCorrectSetup()
     {
-
+        $actAs = new ActAs;
     }
 
 }
