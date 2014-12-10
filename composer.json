@@ -9,11 +9,14 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
-    "autoload": {
-        "psr-4": {"CubicMushroom\\ActAs\\": "src/"}
+    "require": {
     },
     "require-dev": {
-        "codeception/codeception": "~2.0"
+        "codeception/codeception": "@stable",
+        "codeception/specify": "@stable",
+        "codeception/verify": "@stable"
+    },
+    "autoload": {
+        "psr-4": {"CubicMushroom\\ActAs\\": "src/"}
     }
 }
