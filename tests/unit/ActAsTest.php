@@ -57,7 +57,7 @@ class ActAsTest extends Test
             $this->assertInstanceOf($storageClass, $returnedStorageEngine);
         });
 
-        $this->specify('can set the validator', function() {
+        $this->specify('can set the validator to be used', function() {
 
             // Setup mocks
             $validatorClass = '\CubicMushroom\ActAs\PermissionValidator\PermissionValidator';
